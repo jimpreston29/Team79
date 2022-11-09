@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"cr725_Quests\",\"%DataSourceValue.AFD%\":\"[@cr725_Quests]\",\"%SortFieldName.AFD%\":\"\\\"cr725_activitytype\\\"\",\"%SearchFieldName.AFD%\":\"\\\"cr725_activitytype\\\",\\\"cr725_briefdescription\\\",\\\"cr725_classificationdesc\\\"\",\"%StartsWithFieldName.AFD%\":\"cr725_activitytype\",\"%DeleteConfirmFieldName.AFD%\":\"cr725_activitytype\",\"%SortDescending.AFD%\":\"SortDescending1\",\"%BrowseScreen.AFD%\":\"BrowseScreen1\",\"%DetailScreen.AFD%\":\"DetailScreen1\",\"%EditScreen.AFD%\":\"EditScreen1\",\"%BrowseContainer.ID%\":\"BrowseGallery1\",\"%DetailEditContainer.ID%\":\"EditForm1\"}"
+}

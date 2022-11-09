@@ -1,0 +1,134 @@
+[
+  {
+    "DisplayName": "cr725_Quests (Views)",
+    "Name": "_cr725_quest_views",
+    "RelatedEntityName": "cr725_Quests",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4cdeb31c-15c0-4d42-b96a-8adcd25ae10f": "cr725_Quest Lookup View",
+      "60daa00e-6e7b-4406-9c4e-130efd4c61a7": "cr725_Quest Advanced Find View",
+      "8f138335-3923-4403-9f60-d56d4a1bb595": "Inactive cr725_Quests",
+      "d6c9a8f2-e0cc-44b5-8d8b-b86ccf8dbb82": "Active cr725_Quests",
+      "dfd5cbfd-384e-4e8b-ab5f-2d1ceb21ed53": "cr725_Quest Associated View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr725_quests",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr725_quest",
+    "MaxGetRowsCount": 500,
+    "Name": "cr725_Quests",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr725_acknowledged": "Acknowledged",
+      "cr725_activitytype": "Activity Type",
+      "cr725_briefdescription": "Brief Description",
+      "cr725_classificationdesc": "Classification Desc",
+      "cr725_countrycode": "Country (Code)",
+      "cr725_detaileddescription": "Detailed Description",
+      "cr725_employeemanager": "Employee manager",
+      "cr725_facility": "Facility",
+      "cr725_geounitcode": "GeoUnit (Code)",
+      "cr725_hazarddescription": "Hazard Description",
+      "cr725_hseentrycreatedby": "HSE Entry Created By",
+      "cr725_hseentrycreatedbyuid": "HSE Entry Created By UID",
+      "cr725_hseseverity": "HSE Severity",
+      "cr725_injury": "Injury",
+      "cr725_jobcode": "jobcode",
+      "cr725_jobgroup": "jobgroup",
+      "cr725_managerid": "ManagerId",
+      "cr725_quest_AsyncOperations": "System Jobs",
+      "cr725_quest_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr725_quest_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr725_quest_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr725_quest_ProcessSession": "Process Sessions",
+      "cr725_quest_SyncErrors": "Sync Errors",
+      "cr725_questid": "cr725_Quest",
+      "cr725_report": "Report#",
+      "cr725_reportdate": "Report Date",
+      "cr725_summary": "Summary",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "cr725_Quests",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Acknowledged (cr725_Quests)",
+    "Name": "cr725_quest_cr725_acknowledged",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr725_acknowledged",
+        "OptionSetReferenceEntityName": "cr725_Quests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr725_acknowledged",
+    "RelatedEntityName": "cr725_Quests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (cr725_Quests)",
+    "Name": "cr725_quest_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "cr725_Quests"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "cr725_Quests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (cr725_Quests)",
+    "Name": "cr725_quest_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "cr725_Quests"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "cr725_Quests",
+    "Type": "OptionSetInfo"
+  }
+]
