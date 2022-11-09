@@ -1,21 +1,6 @@
-"BrowseScreen1 As screen.'phoneBrowseLayout_ver3.0'":
+Screen1 As screen:
 
-    RectQuickActionBar1 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
-    LblAppName1 As label:
-        Fill: =RGBA(58, 58, 58, 0)
-        Height: =88
-        Size: =27
-        Text: ="cr725_Quests"
-        Width: =Parent.Width - Self.X - IconSortUpDown1.Width - IconNewItem1.Width - IconRefresh1.Width
-        Wrap: =false
-        X: =20
-        ZIndex: =2
-
-    IconRefresh1 As icon.Reload:
+    IconRefresh1_1 As icon.Reload:
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Reload
@@ -26,11 +11,12 @@
         PaddingTop: =22
         TabIndex: =0
         Tooltip: ="Refresh list"
-        Width: =88
-        X: =Parent.Width - IconNewItem1.Width - IconSortUpDown1.Width - Self.Width
-        ZIndex: =3
+        Width: =156
+        X: =552
+        Y: =40
+        ZIndex: =1
 
-    IconSortUpDown1 As icon.ArrowsUpDown:
+    IconSortUpDown1_1 As icon.ArrowsUpDown:
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Sort
@@ -42,11 +28,12 @@
         PaddingTop: =26
         TabIndex: =0
         Tooltip: =If(SortDescending1, "Sort list in reverse alphabetical order", "Sort list in alphabetical order")
-        Width: =88
-        X: =Parent.Width - IconNewItem1.Width - Self.Width
-        ZIndex: =4
+        Width: =156
+        X: =552
+        Y: =40
+        ZIndex: =2
 
-    IconNewItem1 As icon.Add:
+    IconNewItem1_1 As icon.Add:
         AccessibleLabel: =Self.Tooltip
         DisplayMode: =If(DataSourceInfo([@cr725_Quests], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
@@ -58,11 +45,12 @@
         PaddingTop: =24
         TabIndex: =0
         Tooltip: ="Create new item"
-        Width: =88
-        X: =Parent.Width - Self.Width
-        ZIndex: =5
+        Width: =156
+        X: =552
+        Y: =40
+        ZIndex: =3
 
-    TextSearchBox1 As text:
+    TextSearchBox1_1 As text:
         Align: =Left
         Default: =""
         DelayOutput: =true
@@ -74,11 +62,11 @@
         RadiusTopLeft: =0
         RadiusTopRight: =7
         Size: =21
-        Width: =Parent.Width
-        Y: =RectQuickActionBar1.Height
-        ZIndex: =6
+        Width: =1136
+        Y: =128
+        ZIndex: =4
 
-    SearchIcon1 As icon.Search:
+    SearchIcon1_1 As icon.Search:
         Color: =RGBA(191, 190, 190, 1)
         Height: =Self.Width
         Icon: =Icon.Search
@@ -87,29 +75,30 @@
         PaddingRight: =14
         PaddingTop: =14
         Tooltip: ="Search"
-        Width: =TextSearchBox1.Height
-        X: =TextSearchBox1.X
-        Y: =TextSearchBox1.Y
-        ZIndex: =7
+        Width: =121
+        X: =TextSearchBox1_1.X
+        Y: =TextSearchBox1_1.Y
+        ZIndex: =5
 
-    Rectangle11 As rectangle:
+    Rectangle11_1 As rectangle:
         Height: =2
-        Width: =Parent.Width
-        Y: =TextSearchBox1.Y + TextSearchBox1.Height
-        ZIndex: =8
+        Width: =1136
+        Y: =TextSearchBox1_1.Y + TextSearchBox1_1.Height
+        ZIndex: =6
 
-    "BrowseGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-        Height: =640
-        Items: =SortByColumns(Search([@cr725_Quests], TextSearchBox1.Text, "cr725_activitytype","cr725_briefdescription","cr725_classificationdesc"), "cr725_activitytype", If(SortDescending1, Descending, Ascending))
+    "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =404
+        Items: =SortByColumns(Search([@cr725_Quests], TextSearchBox1_1.Text, "cr725_activitytype","cr725_briefdescription","cr725_classificationdesc"), "cr725_activitytype", If(SortDescending1, Descending, Ascending))
         Layout: =Layout.Vertical
         OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
-        Width: =Parent.Width
-        ZIndex: =9
+        Width: =1136
+        Y: =236
+        ZIndex: =7
 
-        Title1 As label:
+        Title1_1 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -124,7 +113,7 @@
             Y: =16
             ZIndex: =1
 
-        Subtitle1 As label:
+        Subtitle1_1 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -135,24 +124,24 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Title1.Y + Title1.Height + 2
+            Y: =Title1_1.Y + Title1_1.Height + 2
             ZIndex: =2
 
-        Body1 As label:
+        Body1_1 As label:
             Height: =Self.Size * 4
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Activity Type'
+            Text: =ThisItem.'Brief Description'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Subtitle1.Y + Subtitle1.Height + 4
+            Y: =Subtitle1_1.Y + Subtitle1_1.Height + 4
             ZIndex: =3
 
-        NextArrow1 As icon.ChevronRight:
+        NextArrow1_1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -168,7 +157,7 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        Separator1 As rectangle:
+        Separator1_1 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth

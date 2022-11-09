@@ -83,12 +83,12 @@
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
-    "DocumentLayoutHeight": 1136,
+    "DocumentLayoutHeight": 640,
     "DocumentLayoutLockOrientation": false,
     "DocumentLayoutMaintainAspectRatio": true,
-    "DocumentLayoutOrientation": "portrait",
+    "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
-    "DocumentLayoutWidth": 640,
+    "DocumentLayoutWidth": 1136,
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "e06bb867-8476-49e0-b964-66887f5bd1b0",
@@ -111,6 +111,7 @@
   "ScreenOrder": [
     "BrowseScreen1",
     "DetailScreen1",
-    "EditScreen1"
+    "EditScreen1",
+    "Screen1"
   ]
 }

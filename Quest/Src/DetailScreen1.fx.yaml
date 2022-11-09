@@ -80,7 +80,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =18
+            Y: =0
             ZIndex: =1
 
             DataCardKey1 As label:
@@ -118,7 +118,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =26
+            Y: =1
             ZIndex: =1
 
             DataCardKey2 As label:
